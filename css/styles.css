@@ -57,7 +57,6 @@ header {
 .menu {
     display: flex;
     gap: 40px;
-    padding: 24px 0;
 }
 .navigation .logo {
     margin-right: 76px;
@@ -69,9 +68,10 @@ header {
     text-transform: uppercase;
     color: #4d5ae5;
         }
-}
+
 .menu .menu-link {
     color: #2e2f42;
+    padding: 24px 0;
 }
 .menu .menu-link:hover {
     color: #404BBF;
@@ -215,6 +215,7 @@ header {
     letter-spacing: 0.02em;
     text-align: center;
     color: #2E2F42;
+    margin-bottom: 8px;
 }
 .team-card .team-card-text {
     font-size: 16px;
@@ -276,7 +277,7 @@ header {
 
 .footer {
     background-color: #2E2F42;
-    padding: 100px;
+    padding: 100px 0;
 }
 footer .text{
     font-size: 16px;

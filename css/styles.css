@@ -72,6 +72,7 @@ header {
 .menu .menu-link {
     color: #2e2f42;
     padding: 24px 0;
+    display: block;
 }
 .menu .menu-link:hover {
     color: #404BBF;
@@ -88,8 +89,7 @@ header {
 
 .contacts {
     font-style: normal;
-    padding: 24px 0;
-    margin-left: 332px;
+    margin-left: auto;
 }
 
 .contacts-list {
@@ -101,6 +101,8 @@ header {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+    display: block;
+    padding: 24px 0;
 }
 
 .contacts .contacts-link:hover {
@@ -273,7 +275,6 @@ header {
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    text-align: center;
     color: #2E2F42;
     margin-bottom: 8px;
 }
@@ -281,7 +282,6 @@ header {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    text-align: center;
     color: #434455;
 }
 

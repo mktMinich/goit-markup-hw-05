@@ -73,6 +73,9 @@ header {
     color: #2e2f42;
     padding: 24px 0;
     display: block;
+    transition-property: color, text-decoration;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .menu .menu-link:hover {
     color: #404BBF;
@@ -81,6 +84,15 @@ header {
 .menu .menu-link:focus {
     color: #404BBF;
     text-decoration: underline;
+}
+
+.menu-link.active::after {
+    content: "";
+    display: block;
+    border-bottom: 4px solid #404BBF;
+    border-radius: 2px;
+    position: relative;
+    bottom: -24px;
 }
 
 .menu:last-child {
@@ -103,6 +115,9 @@ header {
     color: #434455;
     display: block;
     padding: 24px 0;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts .contacts-link:hover {
@@ -114,6 +129,12 @@ header {
 .hero {
     background-color: #2E2F42;
     padding: 188px 0;
+    background-image: linear-gradient(to right,
+            rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)), url("../images/hero-img.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .hero-title {
@@ -140,6 +161,10 @@ header {
     border: none;
     border-radius: 4px;
     margin: 0 auto;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button:hover {
     background-color: #404BBF;
@@ -164,6 +189,18 @@ header {
 
 .feature {
     padding: 120px 0;
+}
+
+
+.feature .icon-container {
+    display: flex;
+    background-color: #F4F4FD;
+    padding: 24px 100px;
+    border: 1px solid #8E8F99;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    justify-content: center;
+    align-items: center;
 }
 .feature-title {
     font-family: "Roboto", sans-serif;
@@ -205,6 +242,7 @@ header {
     color: #434455;
 }
 
+
 .team {
     background-color: #F4F4FD;
     padding: 120px 0;
@@ -218,6 +256,8 @@ header {
     background-color: #FFFFFF;
     width: calc((100% - 72px) / 4);
     border-radius: 0 0 4px 4px;
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+                0px 0px 1px 0px rgba(46, 47, 66, 0.16);
 }
 .team-card .team-card-title {
     font-family: "Roboto", sans-serif;
@@ -235,7 +275,37 @@ header {
     letter-spacing: 0.02em;
     text-align: center;
     color: #434455;
+    margin-bottom: 8px;
 }
+
+.media {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
+}
+.icon {
+    fill: #F4F4FD;
+}
+
+
+.media .link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #4D5AE5;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.media .link:hover {
+    background-color: #404BBF;
+}
+
 
 .worker {
     padding: 32px 0;
@@ -289,6 +359,10 @@ header {
     background-color: #2E2F42;
     padding: 100px 0;
 }
+.footer .container {
+    display: flex;
+    gap: 120px;
+}
 footer .text{
     font-size: 16px;
     line-height: 1.5;
@@ -307,9 +381,41 @@ footer .logo {
     display: inline-block;
     margin-bottom: 16px;
 }
-footer .text {
+.logo-container .text {
     max-width: 264px;
 }
 .footer-studio {
     color: #F4F4FD; 
+}
+
+.footer-media {
+    display: flex;
+    gap: 16px;
+}
+
+.footer-media .link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #4D5AE5;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-media .link:hover {
+    background-color: #31D0AA;
+}
+
+.media-container .text{
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    margin-bottom: 16px;
 }

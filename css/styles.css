@@ -141,7 +141,7 @@ header {
 .hero {
     background-color: #2E2F42;
     padding: 188px 0;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/hero-img.png");
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/hero-img.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -467,7 +467,7 @@ footer .logo {
     background-color: #31D0AA;
 }
 
-.footer-media .linl:focus {
+.footer-media .link:focus {
     background-color: #31D0AA;
 }
 

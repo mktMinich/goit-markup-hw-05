@@ -89,9 +89,9 @@ header {
     text-decoration: underline;
 }
 
-.active {
+.menu .active {
     position: relative;
-    color: #404BBF;
+    color: #404bbf;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -141,12 +141,11 @@ header {
 .hero {
     background-color: #2E2F42;
     padding: 188px 0;
-    background-image: linear-gradient(
-            rgba(46, 47, 66, 0.7),
-            rgba(46, 47, 66, 0.7)), url("../images/hero-img.png");
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/hero-img.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    max-width: 1440px;
 }
 
 .hero-title {
@@ -269,9 +268,9 @@ header {
     background-color: #FFFFFF;
     width: calc((100% - 72px) / 4);
     border-radius: 0 0 4px 4px;
-    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
-                0px 0px 1px 0px rgba(46, 47, 66, 0.16),
-                0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .team-card .team-card-title {
     font-family: "Roboto", sans-serif;
@@ -356,9 +355,9 @@ header {
 }
 
 .portfolio-card-item:hover {
-    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
-        0px 1px 1px 0px rgba(46, 47, 66, 0.16),
-        0px 2px 1px 0px rgba(46, 47, 66, 0.08);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 2px 1px rgba(46, 47, 66, 0.08);
         
     cursor: pointer;
 }
@@ -435,9 +434,12 @@ footer .logo {
     display: inline-block;
     margin-bottom: 16px;
 }
+
+.logo-container {
+    margin-right: 120px;
+}
 .logo-container .text {
     max-width: 264px;
-    margin-right: 120px;
 }
 .footer-studio {
     color: #F4F4FD; 
@@ -462,6 +464,10 @@ footer .logo {
 }
 
 .footer-media .link:hover {
+    background-color: #31D0AA;
+}
+
+.footer-media .linl:focus {
     background-color: #31D0AA;
 }
 
